@@ -1,0 +1,24 @@
+<p-card>
+
+
+    <div class="grid">
+        @for (item of products; track $index) {
+        <div class="col-4">
+            <p-card class="shadow-5  flex   " header="Advanced Card" subheader="Card Subheader" [style]="{ width: '350px' }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="https://primefaces.org/cdn/primeng/images/demo/product/{{ item.image }}" />
+                </ng-template>
+                <p>
+                    Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+
+                    $140.00
+                </p>
+                <ng-template pTemplate="footer">
+                  
+                </ng-template>
+            </p-card>
+        </div>
+        }
+
+    </div>
+</p-card>
